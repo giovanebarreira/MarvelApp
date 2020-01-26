@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE4B24BA23DDCE9F006AE72F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24B923DDCE9F006AE72F /* AppDelegate.swift */; };
+		AE4B24BC23DDCE9F006AE72F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24BB23DDCE9F006AE72F /* SceneDelegate.swift */; };
+		AE4B24BE23DDCE9F006AE72F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24BD23DDCE9F006AE72F /* ViewController.swift */; };
+		AE4B24C123DDCE9F006AE72F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4B24BF23DDCE9F006AE72F /* Main.storyboard */; };
+		AE4B24C323DDCEA0006AE72F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4B24C223DDCEA0006AE72F /* Assets.xcassets */; };
+		AE4B24C623DDCEA0006AE72F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4B24C423DDCEA0006AE72F /* LaunchScreen.storyboard */; };
+		AE4B24D123DDCEA0006AE72F /* desafio_ios_giovane_barreiraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24D023DDCEA0006AE72F /* desafio_ios_giovane_barreiraTests.swift */; };
+		AE4B24DC23DDCEA0006AE72F /* desafio_ios_giovane_barreiraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24DB23DDCEA0006AE72F /* desafio_ios_giovane_barreiraUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE4B24CD23DDCEA0006AE72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE4B24AE23DDCE9F006AE72F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE4B24B523DDCE9F006AE72F;
+			remoteInfo = "desafio-ios-giovane-barreira";
+		};
+		AE4B24D823DDCEA0006AE72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE4B24AE23DDCE9F006AE72F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE4B24B523DDCE9F006AE72F;
+			remoteInfo = "desafio-ios-giovane-barreira";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE4B24B623DDCE9F006AE72F /* desafio-ios-giovane-barreira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-ios-giovane-barreira.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4B24B923DDCE9F006AE72F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE4B24BB23DDCE9F006AE72F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AE4B24BD23DDCE9F006AE72F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE4B24C023DDCE9F006AE72F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE4B24C223DDCEA0006AE72F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE4B24C523DDCEA0006AE72F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE4B24C723DDCEA0006AE72F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE4B24CC23DDCEA0006AE72F /* desafio-ios-giovane-barreiraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desafio-ios-giovane-barreiraTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4B24D023DDCEA0006AE72F /* desafio_ios_giovane_barreiraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafio_ios_giovane_barreiraTests.swift; sourceTree = "<group>"; };
+		AE4B24D223DDCEA0006AE72F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE4B24D723DDCEA0006AE72F /* desafio-ios-giovane-barreiraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desafio-ios-giovane-barreiraUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4B24DB23DDCEA0006AE72F /* desafio_ios_giovane_barreiraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafio_ios_giovane_barreiraUITests.swift; sourceTree = "<group>"; };
+		AE4B24DD23DDCEA0006AE72F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE4B24B323DDCE9F006AE72F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4B24C923DDCEA0006AE72F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4B24D423DDCEA0006AE72F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE4B24AD23DDCE9F006AE72F = {
+			isa = PBXGroup;
+			children = (
+				AE4B24B823DDCE9F006AE72F /* desafio-ios-giovane-barreira */,
+				AE4B24CF23DDCEA0006AE72F /* desafio-ios-giovane-barreiraTests */,
+				AE4B24DA23DDCEA0006AE72F /* desafio-ios-giovane-barreiraUITests */,
+				AE4B24B723DDCE9F006AE72F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE4B24B723DDCE9F006AE72F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE4B24B623DDCE9F006AE72F /* desafio-ios-giovane-barreira.app */,
+				AE4B24CC23DDCEA0006AE72F /* desafio-ios-giovane-barreiraTests.xctest */,
+				AE4B24D723DDCEA0006AE72F /* desafio-ios-giovane-barreiraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE4B24B823DDCE9F006AE72F /* desafio-ios-giovane-barreira */ = {
+			isa = PBXGroup;
+			children = (
+				AE4B24B923DDCE9F006AE72F /* AppDelegate.swift */,
+				AE4B24BB23DDCE9F006AE72F /* SceneDelegate.swift */,
+				AE4B24BD23DDCE9F006AE72F /* ViewController.swift */,
+				AE4B24BF23DDCE9F006AE72F /* Main.storyboard */,
+				AE4B24C223DDCEA0006AE72F /* Assets.xcassets */,
+				AE4B24C423DDCEA0006AE72F /* LaunchScreen.storyboard */,
+				AE4B24C723DDCEA0006AE72F /* Info.plist */,
+			);
+			path = "desafio-ios-giovane-barreira";
+			sourceTree = "<group>";
+		};
+		AE4B24CF23DDCEA0006AE72F /* desafio-ios-giovane-barreiraTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE4B24D023DDCEA0006AE72F /* desafio_ios_giovane_barreiraTests.swift */,
+				AE4B24D223DDCEA0006AE72F /* Info.plist */,
+			);
+			path = "desafio-ios-giovane-barreiraTests";
+			sourceTree = "<group>";
+		};
+		AE4B24DA23DDCEA0006AE72F /* desafio-ios-giovane-barreiraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE4B24DB23DDCEA0006AE72F /* desafio_ios_giovane_barreiraUITests.swift */,
+				AE4B24DD23DDCEA0006AE72F /* Info.plist */,
+			);
+			path = "desafio-ios-giovane-barreiraUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE4B24B523DDCE9F006AE72F /* desafio-ios-giovane-barreira */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE4B24E023DDCEA0006AE72F /* Build configuration list for PBXNativeTarget "desafio-ios-giovane-barreira" */;
+			buildPhases = (
+				AE4B24B223DDCE9F006AE72F /* Sources */,
+				AE4B24B323DDCE9F006AE72F /* Frameworks */,
+				AE4B24B423DDCE9F006AE72F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "desafio-ios-giovane-barreira";
+			productName = "desafio-ios-giovane-barreira";
+			productReference = AE4B24B623DDCE9F006AE72F /* desafio-ios-giovane-barreira.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE4B24CB23DDCEA0006AE72F /* desafio-ios-giovane-barreiraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE4B24E323DDCEA0006AE72F /* Build configuration list for PBXNativeTarget "desafio-ios-giovane-barreiraTests" */;
+			buildPhases = (
+				AE4B24C823DDCEA0006AE72F /* Sources */,
+				AE4B24C923DDCEA0006AE72F /* Frameworks */,
+				AE4B24CA23DDCEA0006AE72F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE4B24CE23DDCEA0006AE72F /* PBXTargetDependency */,
+			);
+			name = "desafio-ios-giovane-barreiraTests";
+			productName = "desafio-ios-giovane-barreiraTests";
+			productReference = AE4B24CC23DDCEA0006AE72F /* desafio-ios-giovane-barreiraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE4B24D623DDCEA0006AE72F /* desafio-ios-giovane-barreiraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE4B24E623DDCEA0006AE72F /* Build configuration list for PBXNativeTarget "desafio-ios-giovane-barreiraUITests" */;
+			buildPhases = (
+				AE4B24D323DDCEA0006AE72F /* Sources */,
+				AE4B24D423DDCEA0006AE72F /* Frameworks */,
+				AE4B24D523DDCEA0006AE72F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE4B24D923DDCEA0006AE72F /* PBXTargetDependency */,
+			);
+			name = "desafio-ios-giovane-barreiraUITests";
+			productName = "desafio-ios-giovane-barreiraUITests";
+			productReference = AE4B24D723DDCEA0006AE72F /* desafio-ios-giovane-barreiraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE4B24AE23DDCE9F006AE72F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Giovane Barreira";
+				TargetAttributes = {
+					AE4B24B523DDCE9F006AE72F = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					AE4B24CB23DDCEA0006AE72F = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = AE4B24B523DDCE9F006AE72F;
+					};
+					AE4B24D623DDCEA0006AE72F = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = AE4B24B523DDCE9F006AE72F;
+					};
+				};
+			};
+			buildConfigurationList = AE4B24B123DDCE9F006AE72F /* Build configuration list for PBXProject "desafio-ios-giovane-barreira" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE4B24AD23DDCE9F006AE72F;
+			productRefGroup = AE4B24B723DDCE9F006AE72F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE4B24B523DDCE9F006AE72F /* desafio-ios-giovane-barreira */,
+				AE4B24CB23DDCEA0006AE72F /* desafio-ios-giovane-barreiraTests */,
+				AE4B24D623DDCEA0006AE72F /* desafio-ios-giovane-barreiraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE4B24B423DDCE9F006AE72F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4B24C623DDCEA0006AE72F /* LaunchScreen.storyboard in Resources */,
+				AE4B24C323DDCEA0006AE72F /* Assets.xcassets in Resources */,
+				AE4B24C123DDCE9F006AE72F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4B24CA23DDCEA0006AE72F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4B24D523DDCEA0006AE72F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE4B24B223DDCE9F006AE72F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4B24BE23DDCE9F006AE72F /* ViewController.swift in Sources */,
+				AE4B24BA23DDCE9F006AE72F /* AppDelegate.swift in Sources */,
+				AE4B24BC23DDCE9F006AE72F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4B24C823DDCEA0006AE72F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4B24D123DDCEA0006AE72F /* desafio_ios_giovane_barreiraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4B24D323DDCEA0006AE72F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4B24DC23DDCEA0006AE72F /* desafio_ios_giovane_barreiraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE4B24CE23DDCEA0006AE72F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE4B24B523DDCE9F006AE72F /* desafio-ios-giovane-barreira */;
+			targetProxy = AE4B24CD23DDCEA0006AE72F /* PBXContainerItemProxy */;
+		};
+		AE4B24D923DDCEA0006AE72F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE4B24B523DDCE9F006AE72F /* desafio-ios-giovane-barreira */;
+			targetProxy = AE4B24D823DDCEA0006AE72F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE4B24BF23DDCE9F006AE72F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE4B24C023DDCE9F006AE72F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE4B24C423DDCEA0006AE72F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE4B24C523DDCEA0006AE72F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE4B24DE23DDCEA0006AE72F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE4B24DF23DDCEA0006AE72F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE4B24E123DDCEA0006AE72F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KNQUVW98YZ;
+				INFOPLIST_FILE = "desafio-ios-giovane-barreira/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.giovanebarreira.desafio-ios-giovane-barreira";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE4B24E223DDCEA0006AE72F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KNQUVW98YZ;
+				INFOPLIST_FILE = "desafio-ios-giovane-barreira/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.giovanebarreira.desafio-ios-giovane-barreira";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE4B24E423DDCEA0006AE72F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KNQUVW98YZ;
+				INFOPLIST_FILE = "desafio-ios-giovane-barreiraTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.giovanebarreira.desafio-ios-giovane-barreiraTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desafio-ios-giovane-barreira.app/desafio-ios-giovane-barreira";
+			};
+			name = Debug;
+		};
+		AE4B24E523DDCEA0006AE72F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KNQUVW98YZ;
+				INFOPLIST_FILE = "desafio-ios-giovane-barreiraTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.giovanebarreira.desafio-ios-giovane-barreiraTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desafio-ios-giovane-barreira.app/desafio-ios-giovane-barreira";
+			};
+			name = Release;
+		};
+		AE4B24E723DDCEA0006AE72F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KNQUVW98YZ;
+				INFOPLIST_FILE = "desafio-ios-giovane-barreiraUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.giovanebarreira.desafio-ios-giovane-barreiraUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "desafio-ios-giovane-barreira";
+			};
+			name = Debug;
+		};
+		AE4B24E823DDCEA0006AE72F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KNQUVW98YZ;
+				INFOPLIST_FILE = "desafio-ios-giovane-barreiraUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.giovanebarreira.desafio-ios-giovane-barreiraUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "desafio-ios-giovane-barreira";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE4B24B123DDCE9F006AE72F /* Build configuration list for PBXProject "desafio-ios-giovane-barreira" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4B24DE23DDCEA0006AE72F /* Debug */,
+				AE4B24DF23DDCEA0006AE72F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE4B24E023DDCEA0006AE72F /* Build configuration list for PBXNativeTarget "desafio-ios-giovane-barreira" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4B24E123DDCEA0006AE72F /* Debug */,
+				AE4B24E223DDCEA0006AE72F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE4B24E323DDCEA0006AE72F /* Build configuration list for PBXNativeTarget "desafio-ios-giovane-barreiraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4B24E423DDCEA0006AE72F /* Debug */,
+				AE4B24E523DDCEA0006AE72F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE4B24E623DDCEA0006AE72F /* Build configuration list for PBXNativeTarget "desafio-ios-giovane-barreiraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4B24E723DDCEA0006AE72F /* Debug */,
+				AE4B24E823DDCEA0006AE72F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE4B24AE23DDCE9F006AE72F /* Project object */;
+}
