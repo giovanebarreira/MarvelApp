@@ -3,18 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13A74ABCD6A2C5AF1B505A0E /* Pods_desafio_ios_giovane_barreira_desafio_ios_giovane_barreiraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11BBB76920EA58D6BA8CADAD /* Pods_desafio_ios_giovane_barreira_desafio_ios_giovane_barreiraUITests.framework */; };
+		452550933799F1E8C87538F7 /* Pods_desafio_ios_giovane_barreiraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD76B16EC484FD15A10893F /* Pods_desafio_ios_giovane_barreiraTests.framework */; };
+		AE24F8D723DE1DFC0033C337 /* UIImage+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24F8D623DE1DFC0033C337 /* UIImage+Kingfisher.swift */; };
+		AE44AAB723DE4EA700D845BF /* ComicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE44AAB623DE4EA700D845BF /* ComicModel.swift */; };
+		AE44AAB923DE509700D845BF /* ComicBookDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE44AAB823DE509700D845BF /* ComicBookDetailsViewModel.swift */; };
+		AE44AABE23DE526A00D845BF /* ComicDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE44AABC23DE526A00D845BF /* ComicDetailController.swift */; };
+		AE44AABF23DE526A00D845BF /* ComicDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE44AABD23DE526A00D845BF /* ComicDetailController.xib */; };
 		AE4B24BA23DDCE9F006AE72F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24B923DDCE9F006AE72F /* AppDelegate.swift */; };
 		AE4B24BC23DDCE9F006AE72F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24BB23DDCE9F006AE72F /* SceneDelegate.swift */; };
-		AE4B24BE23DDCE9F006AE72F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24BD23DDCE9F006AE72F /* ViewController.swift */; };
-		AE4B24C123DDCE9F006AE72F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4B24BF23DDCE9F006AE72F /* Main.storyboard */; };
+		AE4B24C123DDCE9F006AE72F /* AllCharacters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4B24BF23DDCE9F006AE72F /* AllCharacters.storyboard */; };
 		AE4B24C323DDCEA0006AE72F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4B24C223DDCEA0006AE72F /* Assets.xcassets */; };
 		AE4B24C623DDCEA0006AE72F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4B24C423DDCEA0006AE72F /* LaunchScreen.storyboard */; };
 		AE4B24D123DDCEA0006AE72F /* desafio_ios_giovane_barreiraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24D023DDCEA0006AE72F /* desafio_ios_giovane_barreiraTests.swift */; };
 		AE4B24DC23DDCEA0006AE72F /* desafio_ios_giovane_barreiraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24DB23DDCEA0006AE72F /* desafio_ios_giovane_barreiraUITests.swift */; };
+		AE4B24EF23DDD002006AE72F /* AllCharactersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24EE23DDD002006AE72F /* AllCharactersController.swift */; };
+		AE4B24F323DDD0F6006AE72F /* AllCharactersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24F123DDD0F6006AE72F /* AllCharactersCell.swift */; };
+		AE4B24F423DDD0F6006AE72F /* AllCharactersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE4B24F223DDD0F6006AE72F /* AllCharactersCell.xib */; };
+		AE4B24F623DDD64F006AE72F /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24F523DDD64F006AE72F /* WebService.swift */; };
+		AE4B24F823DDE7CB006AE72F /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24F723DDE7CB006AE72F /* CharactersModel.swift */; };
+		AE4B24FA23DDF8DF006AE72F /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24F923DDF8DF006AE72F /* CharacterListViewModel.swift */; };
+		AEAF4F4323DE0BA900F72F2D /* CharacterDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF4F4123DE0BA900F72F2D /* CharacterDetailsController.swift */; };
+		AEAF4F4423DE0BA900F72F2D /* CharacterDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEAF4F4223DE0BA900F72F2D /* CharacterDetailsController.xib */; };
+		F730A947495CA5E72CA89776 /* Pods_desafio_ios_giovane_barreira.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F97BE6A4E34F7A7EAD9BF02 /* Pods_desafio_ios_giovane_barreira.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +50,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C8BD8868D839DBFF066E1F /* Pods-desafio-ios-giovane-barreiraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-giovane-barreiraTests.debug.xcconfig"; path = "Target Support Files/Pods-desafio-ios-giovane-barreiraTests/Pods-desafio-ios-giovane-barreiraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		11BBB76920EA58D6BA8CADAD /* Pods_desafio_ios_giovane_barreira_desafio_ios_giovane_barreiraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafio_ios_giovane_barreira_desafio_ios_giovane_barreiraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F4DAA840E42FF5D902499E /* Pods-desafio-ios-giovane-barreira.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-giovane-barreira.release.xcconfig"; path = "Target Support Files/Pods-desafio-ios-giovane-barreira/Pods-desafio-ios-giovane-barreira.release.xcconfig"; sourceTree = "<group>"; };
+		709F8221F0234ABB59902559 /* Pods-desafio-ios-giovane-barreiraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-giovane-barreiraTests.release.xcconfig"; path = "Target Support Files/Pods-desafio-ios-giovane-barreiraTests/Pods-desafio-ios-giovane-barreiraTests.release.xcconfig"; sourceTree = "<group>"; };
+		8378C2DA15D492672733D005 /* Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests.release.xcconfig"; path = "Target Support Files/Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests/Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8F97BE6A4E34F7A7EAD9BF02 /* Pods_desafio_ios_giovane_barreira.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafio_ios_giovane_barreira.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE24F8D623DE1DFC0033C337 /* UIImage+Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Kingfisher.swift"; sourceTree = "<group>"; };
+		AE44AAB623DE4EA700D845BF /* ComicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicModel.swift; sourceTree = "<group>"; };
+		AE44AAB823DE509700D845BF /* ComicBookDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicBookDetailsViewModel.swift; sourceTree = "<group>"; };
+		AE44AABC23DE526A00D845BF /* ComicDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailController.swift; sourceTree = "<group>"; };
+		AE44AABD23DE526A00D845BF /* ComicDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicDetailController.xib; sourceTree = "<group>"; };
 		AE4B24B623DDCE9F006AE72F /* desafio-ios-giovane-barreira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-ios-giovane-barreira.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4B24B923DDCE9F006AE72F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE4B24BB23DDCE9F006AE72F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AE4B24BD23DDCE9F006AE72F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AE4B24C023DDCE9F006AE72F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE4B24C023DDCE9F006AE72F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AllCharacters.storyboard; sourceTree = "<group>"; };
 		AE4B24C223DDCEA0006AE72F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE4B24C523DDCEA0006AE72F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE4B24C723DDCEA0006AE72F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +74,17 @@
 		AE4B24D723DDCEA0006AE72F /* desafio-ios-giovane-barreiraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desafio-ios-giovane-barreiraUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4B24DB23DDCEA0006AE72F /* desafio_ios_giovane_barreiraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafio_ios_giovane_barreiraUITests.swift; sourceTree = "<group>"; };
 		AE4B24DD23DDCEA0006AE72F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE4B24EE23DDD002006AE72F /* AllCharactersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharactersController.swift; sourceTree = "<group>"; };
+		AE4B24F123DDD0F6006AE72F /* AllCharactersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharactersCell.swift; sourceTree = "<group>"; };
+		AE4B24F223DDD0F6006AE72F /* AllCharactersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCharactersCell.xib; sourceTree = "<group>"; };
+		AE4B24F523DDD64F006AE72F /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		AE4B24F723DDE7CB006AE72F /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
+		AE4B24F923DDF8DF006AE72F /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
+		AEAF4F4123DE0BA900F72F2D /* CharacterDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsController.swift; sourceTree = "<group>"; };
+		AEAF4F4223DE0BA900F72F2D /* CharacterDetailsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailsController.xib; sourceTree = "<group>"; };
+		B89C9E8ABAA654C37762523A /* Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests.debug.xcconfig"; path = "Target Support Files/Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests/Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C925A10AC2CBACE8070DA6ED /* Pods-desafio-ios-giovane-barreira.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-giovane-barreira.debug.xcconfig"; path = "Target Support Files/Pods-desafio-ios-giovane-barreira/Pods-desafio-ios-giovane-barreira.debug.xcconfig"; sourceTree = "<group>"; };
+		DFD76B16EC484FD15A10893F /* Pods_desafio_ios_giovane_barreiraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafio_ios_giovane_barreiraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F730A947495CA5E72CA89776 /* Pods_desafio_ios_giovane_barreira.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452550933799F1E8C87538F7 /* Pods_desafio_ios_giovane_barreiraTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +108,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13A74ABCD6A2C5AF1B505A0E /* Pods_desafio_ios_giovane_barreira_desafio_ios_giovane_barreiraUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CDCEBA15CE6C505795F8A61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C925A10AC2CBACE8070DA6ED /* Pods-desafio-ios-giovane-barreira.debug.xcconfig */,
+				49F4DAA840E42FF5D902499E /* Pods-desafio-ios-giovane-barreira.release.xcconfig */,
+				B89C9E8ABAA654C37762523A /* Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests.debug.xcconfig */,
+				8378C2DA15D492672733D005 /* Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests.release.xcconfig */,
+				00C8BD8868D839DBFF066E1F /* Pods-desafio-ios-giovane-barreiraTests.debug.xcconfig */,
+				709F8221F0234ABB59902559 /* Pods-desafio-ios-giovane-barreiraTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE24F8D523DE1DED0033C337 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE24F8D623DE1DFC0033C337 /* UIImage+Kingfisher.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AE4B24AD23DDCE9F006AE72F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +143,8 @@
 				AE4B24CF23DDCEA0006AE72F /* desafio-ios-giovane-barreiraTests */,
 				AE4B24DA23DDCEA0006AE72F /* desafio-ios-giovane-barreiraUITests */,
 				AE4B24B723DDCE9F006AE72F /* Products */,
+				0CDCEBA15CE6C505795F8A61 /* Pods */,
+				C7CA1E5A05F90214BE0B5186 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +161,15 @@
 		AE4B24B823DDCE9F006AE72F /* desafio-ios-giovane-barreira */ = {
 			isa = PBXGroup;
 			children = (
+				AE24F8D523DE1DED0033C337 /* Extensions */,
+				AE4B24EC23DDCEE1006AE72F /* WebService */,
+				AE4B24EA23DDCECC006AE72F /* Models */,
+				AE4B24F023DDD0E1006AE72F /* Cells */,
+				AE4B24ED23DDCFCA006AE72F /* ViewModels */,
+				AE4B24E923DDCEBB006AE72F /* Views */,
+				AE4B24EB23DDCED6006AE72F /* Controllers */,
 				AE4B24B923DDCE9F006AE72F /* AppDelegate.swift */,
 				AE4B24BB23DDCE9F006AE72F /* SceneDelegate.swift */,
-				AE4B24BD23DDCE9F006AE72F /* ViewController.swift */,
-				AE4B24BF23DDCE9F006AE72F /* Main.storyboard */,
 				AE4B24C223DDCEA0006AE72F /* Assets.xcassets */,
 				AE4B24C423DDCEA0006AE72F /* LaunchScreen.storyboard */,
 				AE4B24C723DDCEA0006AE72F /* Info.plist */,
@@ -128,6 +195,71 @@
 			path = "desafio-ios-giovane-barreiraUITests";
 			sourceTree = "<group>";
 		};
+		AE4B24E923DDCEBB006AE72F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE44AABD23DE526A00D845BF /* ComicDetailController.xib */,
+				AEAF4F4223DE0BA900F72F2D /* CharacterDetailsController.xib */,
+				AE4B24BF23DDCE9F006AE72F /* AllCharacters.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE4B24EA23DDCECC006AE72F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE4B24F723DDE7CB006AE72F /* CharactersModel.swift */,
+				AE44AAB623DE4EA700D845BF /* ComicModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE4B24EB23DDCED6006AE72F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE4B24EE23DDD002006AE72F /* AllCharactersController.swift */,
+				AEAF4F4123DE0BA900F72F2D /* CharacterDetailsController.swift */,
+				AE44AABC23DE526A00D845BF /* ComicDetailController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE4B24EC23DDCEE1006AE72F /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				AE4B24F523DDD64F006AE72F /* WebService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		AE4B24ED23DDCFCA006AE72F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AE4B24F923DDF8DF006AE72F /* CharacterListViewModel.swift */,
+				AE44AAB823DE509700D845BF /* ComicBookDetailsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AE4B24F023DDD0E1006AE72F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AE4B24F123DDD0F6006AE72F /* AllCharactersCell.swift */,
+				AE4B24F223DDD0F6006AE72F /* AllCharactersCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C7CA1E5A05F90214BE0B5186 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F97BE6A4E34F7A7EAD9BF02 /* Pods_desafio_ios_giovane_barreira.framework */,
+				11BBB76920EA58D6BA8CADAD /* Pods_desafio_ios_giovane_barreira_desafio_ios_giovane_barreiraUITests.framework */,
+				DFD76B16EC484FD15A10893F /* Pods_desafio_ios_giovane_barreiraTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +267,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE4B24E023DDCEA0006AE72F /* Build configuration list for PBXNativeTarget "desafio-ios-giovane-barreira" */;
 			buildPhases = (
+				69FC24933E55464DF8B44B88 /* [CP] Check Pods Manifest.lock */,
 				AE4B24B223DDCE9F006AE72F /* Sources */,
 				AE4B24B323DDCE9F006AE72F /* Frameworks */,
 				AE4B24B423DDCE9F006AE72F /* Resources */,
+				8DF5C9297EC3B29819B69D06 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +286,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE4B24E323DDCEA0006AE72F /* Build configuration list for PBXNativeTarget "desafio-ios-giovane-barreiraTests" */;
 			buildPhases = (
+				6ACD348A5118D4FEE571E581 /* [CP] Check Pods Manifest.lock */,
 				AE4B24C823DDCEA0006AE72F /* Sources */,
 				AE4B24C923DDCEA0006AE72F /* Frameworks */,
 				AE4B24CA23DDCEA0006AE72F /* Resources */,
@@ -170,9 +305,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE4B24E623DDCEA0006AE72F /* Build configuration list for PBXNativeTarget "desafio-ios-giovane-barreiraUITests" */;
 			buildPhases = (
+				E41DFCA5E533ECF9B04DE78D /* [CP] Check Pods Manifest.lock */,
 				AE4B24D323DDCEA0006AE72F /* Sources */,
 				AE4B24D423DDCEA0006AE72F /* Frameworks */,
 				AE4B24D523DDCEA0006AE72F /* Resources */,
+				18BFAD89E0B95A2033B50EDB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,7 +371,10 @@
 			files = (
 				AE4B24C623DDCEA0006AE72F /* LaunchScreen.storyboard in Resources */,
 				AE4B24C323DDCEA0006AE72F /* Assets.xcassets in Resources */,
-				AE4B24C123DDCE9F006AE72F /* Main.storyboard in Resources */,
+				AE44AABF23DE526A00D845BF /* ComicDetailController.xib in Resources */,
+				AE4B24C123DDCE9F006AE72F /* AllCharacters.storyboard in Resources */,
+				AE4B24F423DDD0F6006AE72F /* AllCharactersCell.xib in Resources */,
+				AEAF4F4423DE0BA900F72F2D /* CharacterDetailsController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +394,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18BFAD89E0B95A2033B50EDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests/Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests/Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests/Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69FC24933E55464DF8B44B88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-desafio-ios-giovane-barreira-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ACD348A5118D4FEE571E581 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-desafio-ios-giovane-barreiraTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DF5C9297EC3B29819B69D06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-desafio-ios-giovane-barreira/Pods-desafio-ios-giovane-barreira-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-desafio-ios-giovane-barreira/Pods-desafio-ios-giovane-barreira-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-desafio-ios-giovane-barreira/Pods-desafio-ios-giovane-barreira-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E41DFCA5E533ECF9B04DE78D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE4B24B223DDCE9F006AE72F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE4B24BE23DDCE9F006AE72F /* ViewController.swift in Sources */,
 				AE4B24BA23DDCE9F006AE72F /* AppDelegate.swift in Sources */,
+				AE44AAB923DE509700D845BF /* ComicBookDetailsViewModel.swift in Sources */,
+				AE24F8D723DE1DFC0033C337 /* UIImage+Kingfisher.swift in Sources */,
+				AE4B24EF23DDD002006AE72F /* AllCharactersController.swift in Sources */,
+				AE44AABE23DE526A00D845BF /* ComicDetailController.swift in Sources */,
+				AE44AAB723DE4EA700D845BF /* ComicModel.swift in Sources */,
 				AE4B24BC23DDCE9F006AE72F /* SceneDelegate.swift in Sources */,
+				AE4B24FA23DDF8DF006AE72F /* CharacterListViewModel.swift in Sources */,
+				AEAF4F4323DE0BA900F72F2D /* CharacterDetailsController.swift in Sources */,
+				AE4B24F823DDE7CB006AE72F /* CharactersModel.swift in Sources */,
+				AE4B24F623DDD64F006AE72F /* WebService.swift in Sources */,
+				AE4B24F323DDD0F6006AE72F /* AllCharactersCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +549,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AE4B24BF23DDCE9F006AE72F /* Main.storyboard */ = {
+		AE4B24BF23DDCE9F006AE72F /* AllCharacters.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AE4B24C023DDCE9F006AE72F /* Base */,
 			);
-			name = Main.storyboard;
+			name = AllCharacters.storyboard;
 			sourceTree = "<group>";
 		};
 		AE4B24C423DDCEA0006AE72F /* LaunchScreen.storyboard */ = {
@@ -432,6 +684,7 @@
 		};
 		AE4B24E123DDCEA0006AE72F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C925A10AC2CBACE8070DA6ED /* Pods-desafio-ios-giovane-barreira.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +703,7 @@
 		};
 		AE4B24E223DDCEA0006AE72F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49F4DAA840E42FF5D902499E /* Pods-desafio-ios-giovane-barreira.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +722,7 @@
 		};
 		AE4B24E423DDCEA0006AE72F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C8BD8868D839DBFF066E1F /* Pods-desafio-ios-giovane-barreiraTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +745,7 @@
 		};
 		AE4B24E523DDCEA0006AE72F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 709F8221F0234ABB59902559 /* Pods-desafio-ios-giovane-barreiraTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +768,7 @@
 		};
 		AE4B24E723DDCEA0006AE72F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B89C9E8ABAA654C37762523A /* Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +789,7 @@
 		};
 		AE4B24E823DDCEA0006AE72F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8378C2DA15D492672733D005 /* Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
