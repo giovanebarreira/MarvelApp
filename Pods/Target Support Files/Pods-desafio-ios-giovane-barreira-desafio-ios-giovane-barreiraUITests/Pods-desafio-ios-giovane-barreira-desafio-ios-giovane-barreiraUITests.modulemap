@@ -1,0 +1,6 @@
+framework module Pods_desafio_ios_giovane_barreira_desafio_ios_giovane_barreiraUITests {
+  umbrella header "Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
