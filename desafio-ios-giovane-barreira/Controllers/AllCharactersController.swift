@@ -9,17 +9,39 @@
 import Foundation
 import UIKit
 
+
 class AllCharactersController: UIViewController {
     
     @IBOutlet weak var charactersTableView: UITableView!
     private let identifier = "charCell"
     private var characterListVM: CharactersListViewModel!
+    let charactersClient = CharactersClient()
+    var currentLimit : Int = 20
+    var isLoadingList : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupTableViewAndCell()
-        httpRequest()
+        newRequest()
+    }
+    
+    func newRequest(){
+        charactersClient.getFeed(from:.allCharacters) { [weak self] result in
+            
+            switch result {
+            case .success(let charactersFeedResult):
+                guard let characterResults = charactersFeedResult?.data.characterResults else { return }
+                self?.characterListVM = CharactersListViewModel(characters: characterResults)
+                
+                DispatchQueue.main.async {
+                    self?.charactersTableView.reloadData()
+                }
+                
+            case .failure(let error):
+                print("the error \(error)")
+            }
+        }
     }
     
     //MARK: Setup TableView
@@ -34,20 +56,8 @@ class AllCharactersController: UIViewController {
         if let navigationController = self.navigationController {
             navigationController.navigationBar.prefersLargeTitles = true
         }
-    }
-    
-    func httpRequest() {
-        let url = URL(string: "https://gateway.marvel.com:443/v1/public/characters?limit=100&ts=1&apikey=f6b3acfaacdefbba53b2fe3cd32fb87e&hash=4d0f627bea35913d20310b6c8ebebbb3")!
         
-        WebService().getCharacters(url: url) { characters in
-            if let characters = characters {
-                self.characterListVM = CharactersListViewModel(characters: characters)
-                
-                DispatchQueue.main.async {
-                    self.charactersTableView.reloadData()
-                }
-            }
-        }
+        self.charactersTableView.separatorInset = .zero
     }
 }
 
@@ -68,7 +78,7 @@ extension AllCharactersController: UITableViewDataSource {
         }
         
         let characterVM = self.characterListVM.charactersAtIndex(indexPath.row)
-        
+
         cell.characterName.text = characterVM.name
         cell.characterImage.download(image: characterVM.thumbnail)
         
@@ -91,10 +101,17 @@ extension AllCharactersController: UITableViewDelegate {
         }
         navigation.pushViewController(detailCharacters, animated: true)
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+          if (((scrollView.contentOffset.y + scrollView.frame.size.height) > scrollView.contentSize.height ) && !isLoadingList){
+
+            charactersTableView.reloadData()
+          }
+    }
 }
 
 extension AllCharactersController: CharacterDetailsControllerDelegate {
     func setupDetails(indexPath: Int, character: CharactersListViewModel) {
-        print(indexPath)
     }
 }
+

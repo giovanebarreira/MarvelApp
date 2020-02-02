@@ -53,3 +53,5 @@ struct CharactersViewModel {
         return completeImgPath
     }
 }
+
+

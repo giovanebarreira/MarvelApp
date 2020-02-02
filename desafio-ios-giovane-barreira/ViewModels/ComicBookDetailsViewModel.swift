@@ -8,11 +8,6 @@
 
 import Foundation
 
-struct ComicsListViewModel {
-    let comicBook: [ComicBook]
-
-}
-
 ///Getting single data parsed
 struct ComicBookDetailsViewModel {
     
@@ -27,12 +22,13 @@ struct ComicBookDetailsViewModel {
     }
     
     var description: String {
-        return self.comicBook.description
+        return self.comicBook.description!
     }
-    
-    var price: Float {
-        return self.comicBook.price.price
+
+    var printedComicPrice: [Float] {
+        return self.printedComicPrice
     }
+
     
     var thumbnail: String {
         let path = comicBook.thumbnail.path
@@ -40,6 +36,7 @@ struct ComicBookDetailsViewModel {
         let completeImgPath = "\(path).\(imgExtension)"
         return completeImgPath
     }
+
 }
 
 

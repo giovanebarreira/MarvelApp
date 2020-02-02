@@ -8,19 +8,19 @@
 
 import Foundation
 
-struct DataResponseComic: Decodable {
-    let dataComics: ResultsComics
+struct ComicDataResponse: Decodable {
+    let data: ResultsComics
 }
 
 struct ResultsComics: Decodable {
-    let resultsComics: [ComicBook]
+    let results: [ComicBook]
 }
 
 struct ComicBook: Decodable {
     let title: String
-    let description: String
+    let description: String?
     let thumbnail: Thumbnail
-    let price: ComicPrice
+    var prices: [ComicPrice]
 }
 
 struct ThumbnailComicBook: Decodable {
@@ -35,5 +35,5 @@ struct ThumbnailComicBook: Decodable {
 
 struct ComicPrice: Decodable {
     let type: String
-    let price: Float
+    var price: Float
 }

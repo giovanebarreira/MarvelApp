@@ -9,7 +9,7 @@
 import UIKit
 
 protocol ComicDetailControllerDelegate {
-    func httpRequestComics(id: Int)
+    var characterId: String { get }
 }
 
 class ComicDetailController: UIViewController {
@@ -17,27 +17,57 @@ class ComicDetailController: UIViewController {
     @IBOutlet weak var comicTitle: UILabel!
     @IBOutlet weak var comicDescription: UILabel!
     @IBOutlet weak var comicPrice: UILabel!
+    @IBOutlet weak var comicView: UIView!
     
-    private var comicBookDetailsVM: ComicsListViewModel!
+    private var comicBookListVM: ComicBookDetailsViewModel!
     var comicDelegate: ComicDetailControllerDelegate?
+    let comicClient = ComicsClient()
+//    var comicAndPriceDict = [String : Float]()
+  //  var greatest: (key: String, value: Float)?
+    var mostExpensiveComic: ComicBook?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupComicbook()
-    
+        requestComicsOfSelectedCharacter()
+        setupLayout()
     }
     
-    func setupComicbook() {
+    func requestComicsOfSelectedCharacter() {
+        comicClient.getFeed(from: .comicsOfSelectedCharacter(comicDelegate!.characterId)) { [weak self] result in
+            
+            switch result {
+            case .success(let comicsFeedResult):
+                guard let comicResults = comicsFeedResult?.data.results else { return }
+                self!.getComicMostExpensive(comics: comicResults)
+                
+            case .failure(let error):
+                print(" error \(error)")
+            }
+        }
+    }
+    
+    func getComicMostExpensive(comics: [ComicBook]) {
+        var mostExpensive: Float = 0.0
         
+        for comic in comics {
+            if mostExpensive <= (comic.prices[0].price) {
+                mostExpensive = (comic.prices[0].price)
+                print("mostExpensive \(mostExpensive)")
+ 
+                comicBookListVM = ComicBookDetailsViewModel(comic)
+                
+                print(comic.thumbnail)
+                comicImage.download(image: comicBookListVM.thumbnail)
+                comicTitle.text = "Comic Title: \(comic.title)"
+                comicDescription.text = "Description: \(comic.description)"
+                comicPrice.text = "Price USD: \(comic.prices[0].price)"
+            }
+        }
     }
     
-    func httpRequestComics(id: Int) {
-        print(id)
-        let url  = "https://gateway.marvel.com:443/v1/public/characters/\(id)/comics?limit=100&ts=1&apikey=f6b3acfaacdefbba53b2fe3cd32fb87e&hash=4d0f627bea35913d20310b6c8ebebbb3"
-        
-        WebService().performRequest(urlString: url)
+    func setupLayout() {
+        comicView.layer.cornerRadius = 15
     }
-    
 }
-//
+

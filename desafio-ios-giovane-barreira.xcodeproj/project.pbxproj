@@ -17,18 +17,22 @@
 		AE4B24BA23DDCE9F006AE72F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24B923DDCE9F006AE72F /* AppDelegate.swift */; };
 		AE4B24BC23DDCE9F006AE72F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24BB23DDCE9F006AE72F /* SceneDelegate.swift */; };
 		AE4B24C123DDCE9F006AE72F /* AllCharacters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4B24BF23DDCE9F006AE72F /* AllCharacters.storyboard */; };
-		AE4B24C323DDCEA0006AE72F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4B24C223DDCEA0006AE72F /* Assets.xcassets */; };
 		AE4B24C623DDCEA0006AE72F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4B24C423DDCEA0006AE72F /* LaunchScreen.storyboard */; };
 		AE4B24D123DDCEA0006AE72F /* desafio_ios_giovane_barreiraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24D023DDCEA0006AE72F /* desafio_ios_giovane_barreiraTests.swift */; };
 		AE4B24DC23DDCEA0006AE72F /* desafio_ios_giovane_barreiraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24DB23DDCEA0006AE72F /* desafio_ios_giovane_barreiraUITests.swift */; };
 		AE4B24EF23DDD002006AE72F /* AllCharactersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24EE23DDD002006AE72F /* AllCharactersController.swift */; };
 		AE4B24F323DDD0F6006AE72F /* AllCharactersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24F123DDD0F6006AE72F /* AllCharactersCell.swift */; };
 		AE4B24F423DDD0F6006AE72F /* AllCharactersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE4B24F223DDD0F6006AE72F /* AllCharactersCell.xib */; };
-		AE4B24F623DDD64F006AE72F /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24F523DDD64F006AE72F /* WebService.swift */; };
 		AE4B24F823DDE7CB006AE72F /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24F723DDE7CB006AE72F /* CharactersModel.swift */; };
 		AE4B24FA23DDF8DF006AE72F /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B24F923DDF8DF006AE72F /* CharacterListViewModel.swift */; };
+		AE5F050423E721AC0043646A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5F050323E721AB0043646A /* Assets.xcassets */; };
 		AEAF4F4323DE0BA900F72F2D /* CharacterDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF4F4123DE0BA900F72F2D /* CharacterDetailsController.swift */; };
 		AEAF4F4423DE0BA900F72F2D /* CharacterDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEAF4F4223DE0BA900F72F2D /* CharacterDetailsController.xib */; };
+		AEF9074C23E5B5E50091C73B /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF9074B23E5B5E50091C73B /* EndPoint.swift */; };
+		AEF9074E23E5B63A0091C73B /* GenericAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF9074D23E5B63A0091C73B /* GenericAPIClient.swift */; };
+		AEF9075023E5B6500091C73B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF9074F23E5B6500091C73B /* Result.swift */; };
+		AEF9075223E5B6C20091C73B /* CharactersClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF9075123E5B6C20091C73B /* CharactersClient.swift */; };
+		AEF9075423E5D8760091C73B /* ComicsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF9075323E5D8760091C73B /* ComicsClient.swift */; };
 		F730A947495CA5E72CA89776 /* Pods_desafio_ios_giovane_barreira.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F97BE6A4E34F7A7EAD9BF02 /* Pods_desafio_ios_giovane_barreira.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +69,6 @@
 		AE4B24B923DDCE9F006AE72F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE4B24BB23DDCE9F006AE72F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AE4B24C023DDCE9F006AE72F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AllCharacters.storyboard; sourceTree = "<group>"; };
-		AE4B24C223DDCEA0006AE72F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE4B24C523DDCEA0006AE72F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE4B24C723DDCEA0006AE72F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE4B24CC23DDCEA0006AE72F /* desafio-ios-giovane-barreiraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desafio-ios-giovane-barreiraTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,11 +80,16 @@
 		AE4B24EE23DDD002006AE72F /* AllCharactersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharactersController.swift; sourceTree = "<group>"; };
 		AE4B24F123DDD0F6006AE72F /* AllCharactersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharactersCell.swift; sourceTree = "<group>"; };
 		AE4B24F223DDD0F6006AE72F /* AllCharactersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCharactersCell.xib; sourceTree = "<group>"; };
-		AE4B24F523DDD64F006AE72F /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		AE4B24F723DDE7CB006AE72F /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
 		AE4B24F923DDF8DF006AE72F /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
+		AE5F050323E721AB0043646A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEAF4F4123DE0BA900F72F2D /* CharacterDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsController.swift; sourceTree = "<group>"; };
 		AEAF4F4223DE0BA900F72F2D /* CharacterDetailsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailsController.xib; sourceTree = "<group>"; };
+		AEF9074B23E5B5E50091C73B /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		AEF9074D23E5B63A0091C73B /* GenericAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericAPIClient.swift; sourceTree = "<group>"; };
+		AEF9074F23E5B6500091C73B /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		AEF9075123E5B6C20091C73B /* CharactersClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersClient.swift; sourceTree = "<group>"; };
+		AEF9075323E5D8760091C73B /* ComicsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsClient.swift; sourceTree = "<group>"; };
 		B89C9E8ABAA654C37762523A /* Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests.debug.xcconfig"; path = "Target Support Files/Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests/Pods-desafio-ios-giovane-barreira-desafio-ios-giovane-barreiraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C925A10AC2CBACE8070DA6ED /* Pods-desafio-ios-giovane-barreira.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-giovane-barreira.debug.xcconfig"; path = "Target Support Files/Pods-desafio-ios-giovane-barreira/Pods-desafio-ios-giovane-barreira.debug.xcconfig"; sourceTree = "<group>"; };
 		DFD76B16EC484FD15A10893F /* Pods_desafio_ios_giovane_barreiraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafio_ios_giovane_barreiraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +136,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AE23640023E38A0700A1F590 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AEF9074B23E5B5E50091C73B /* EndPoint.swift */,
+				AEF9074D23E5B63A0091C73B /* GenericAPIClient.swift */,
+				AEF9074F23E5B6500091C73B /* Result.swift */,
+				AEF9075123E5B6C20091C73B /* CharactersClient.swift */,
+				AEF9075323E5D8760091C73B /* ComicsClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		AE24F8D523DE1DED0033C337 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,8 +181,8 @@
 		AE4B24B823DDCE9F006AE72F /* desafio-ios-giovane-barreira */ = {
 			isa = PBXGroup;
 			children = (
+				AE23640023E38A0700A1F590 /* Networking */,
 				AE24F8D523DE1DED0033C337 /* Extensions */,
-				AE4B24EC23DDCEE1006AE72F /* WebService */,
 				AE4B24EA23DDCECC006AE72F /* Models */,
 				AE4B24F023DDD0E1006AE72F /* Cells */,
 				AE4B24ED23DDCFCA006AE72F /* ViewModels */,
@@ -170,9 +190,9 @@
 				AE4B24EB23DDCED6006AE72F /* Controllers */,
 				AE4B24B923DDCE9F006AE72F /* AppDelegate.swift */,
 				AE4B24BB23DDCE9F006AE72F /* SceneDelegate.swift */,
-				AE4B24C223DDCEA0006AE72F /* Assets.xcassets */,
 				AE4B24C423DDCEA0006AE72F /* LaunchScreen.storyboard */,
 				AE4B24C723DDCEA0006AE72F /* Info.plist */,
+				AE5F050323E721AB0043646A /* Assets.xcassets */,
 			);
 			path = "desafio-ios-giovane-barreira";
 			sourceTree = "<group>";
@@ -218,18 +238,10 @@
 			isa = PBXGroup;
 			children = (
 				AE4B24EE23DDD002006AE72F /* AllCharactersController.swift */,
-				AEAF4F4123DE0BA900F72F2D /* CharacterDetailsController.swift */,
 				AE44AABC23DE526A00D845BF /* ComicDetailController.swift */,
+				AEAF4F4123DE0BA900F72F2D /* CharacterDetailsController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		AE4B24EC23DDCEE1006AE72F /* WebService */ = {
-			isa = PBXGroup;
-			children = (
-				AE4B24F523DDD64F006AE72F /* WebService.swift */,
-			);
-			path = WebService;
 			sourceTree = "<group>";
 		};
 		AE4B24ED23DDCFCA006AE72F /* ViewModels */ = {
@@ -370,10 +382,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE4B24C623DDCEA0006AE72F /* LaunchScreen.storyboard in Resources */,
-				AE4B24C323DDCEA0006AE72F /* Assets.xcassets in Resources */,
 				AE44AABF23DE526A00D845BF /* ComicDetailController.xib in Resources */,
 				AE4B24C123DDCE9F006AE72F /* AllCharacters.storyboard in Resources */,
 				AE4B24F423DDD0F6006AE72F /* AllCharactersCell.xib in Resources */,
+				AE5F050423E721AC0043646A /* Assets.xcassets in Resources */,
 				AEAF4F4423DE0BA900F72F2D /* CharacterDetailsController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,18 +514,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEF9074C23E5B5E50091C73B /* EndPoint.swift in Sources */,
 				AE4B24BA23DDCE9F006AE72F /* AppDelegate.swift in Sources */,
 				AE44AAB923DE509700D845BF /* ComicBookDetailsViewModel.swift in Sources */,
 				AE24F8D723DE1DFC0033C337 /* UIImage+Kingfisher.swift in Sources */,
 				AE4B24EF23DDD002006AE72F /* AllCharactersController.swift in Sources */,
 				AE44AABE23DE526A00D845BF /* ComicDetailController.swift in Sources */,
+				AEF9075223E5B6C20091C73B /* CharactersClient.swift in Sources */,
+				AEF9075023E5B6500091C73B /* Result.swift in Sources */,
 				AE44AAB723DE4EA700D845BF /* ComicModel.swift in Sources */,
 				AE4B24BC23DDCE9F006AE72F /* SceneDelegate.swift in Sources */,
 				AE4B24FA23DDF8DF006AE72F /* CharacterListViewModel.swift in Sources */,
 				AEAF4F4323DE0BA900F72F2D /* CharacterDetailsController.swift in Sources */,
 				AE4B24F823DDE7CB006AE72F /* CharactersModel.swift in Sources */,
-				AE4B24F623DDD64F006AE72F /* WebService.swift in Sources */,
+				AEF9075423E5D8760091C73B /* ComicsClient.swift in Sources */,
 				AE4B24F323DDD0F6006AE72F /* AllCharactersCell.swift in Sources */,
+				AEF9074E23E5B63A0091C73B /* GenericAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

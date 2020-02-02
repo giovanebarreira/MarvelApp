@@ -8,12 +8,16 @@
 
 import Foundation
 
-struct DataResponse: Decodable {
-    let data: Result
+struct CharacterDataResponse: Decodable {
+    let data: CharactersResult
 }
 
-struct Result: Decodable {
-    let results: [Character]
+struct CharactersResult: Decodable {
+    let characterResults: [Character]
+    
+    enum CodingKeys: String, CodingKey {
+        case characterResults = "results"
+    }
 }
 
 struct Character: Decodable {
@@ -27,9 +31,11 @@ struct Thumbnail: Decodable {
     let path: String
     let imgExtension: String
     
-    //JSON keys are different than mine property name
     enum CodingKeys: String, CodingKey {
         case path = "path"
         case imgExtension = "extension"
     }
 }
+
+
+

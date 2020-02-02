@@ -16,6 +16,7 @@ class CharacterDetailsController: UIViewController {
     @IBOutlet weak var characterImage: UIImageView!
     @IBOutlet weak var characterName: UILabel!
     @IBOutlet weak var characterDescription: UILabel!
+    @IBOutlet weak var showComicButton: UIButton!
     
     var delegate:CharacterDetailsControllerDelegate!
     var characterID: Int = 0
@@ -23,6 +24,7 @@ class CharacterDetailsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupLayout()
     }
     
     func setupDetails(indexPath: Int, character: CharactersListViewModel) {
@@ -34,6 +36,10 @@ class CharacterDetailsController: UIViewController {
         characterID = selectedCharacter.id
     }
     
+    func setupLayout() {
+        characterImage.layer.cornerRadius = 15
+        showComicButton.layer.cornerRadius = 15
+    }
     
     @IBAction func showHQBtnTapped(_ sender: Any) {
         guard let navigation = self.navigationController else {
@@ -43,18 +49,15 @@ class CharacterDetailsController: UIViewController {
         let detailComics = ComicDetailController(nibName: "ComicDetailController", bundle: nil)
         detailComics.comicDelegate = self
         detailComics.title = "Character Details"
-       
-        DispatchQueue.main.async {
-            detailComics.httpRequestComics(id: self.characterID)
-        }
+        navigation.present(detailComics, animated: true, completion: nil)
+      //  navigation.pushViewController(detailComics, animated: true)
         
-        navigation.pushViewController(detailComics, animated: true)
     }
 }
 
 extension CharacterDetailsController: ComicDetailControllerDelegate {
-    func httpRequestComics(id: Int) {
-        characterID = id
+    var characterId: String {
+        return String(characterID)
     }
 }
 
